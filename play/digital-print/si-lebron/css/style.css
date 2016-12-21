@@ -1,0 +1,228 @@
+* {
+	box-sizing:border-box;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	padding-bottom: 0.5em;	
+	margin-bottom: 0.5em;	
+}
+
+body {
+	color: white;
+	/*font-family: 'Exo 2', sans-serif;*/
+	/*font-family: 'Unica One', cursive;*/
+	font-family: 'Dosis', sans-serif;
+	font-weight: 200;
+	margin: 0;
+	padding: 0;
+	/*background: black url(../img/Lebron-James_profile.jpg) no-repeat 50% 100%;*/
+	background-color: black;
+	background-image: url(../img/Lebron-James_profile.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	/*background-size: cover;*/
+	background-size: 960px auto;
+}
+
+.cover{
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.typeart{
+	font-size: 25em;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 0.25em;
+	position: relative;
+	top: -0.2em;
+	left: 0.125em;
+	word-wrap: break-word;
+	line-height: 1.05em;
+	margin: 0 auto;
+	max-width: 960px;
+	/*color: rgba(255,255,255,.35);*/
+	color: rgba(255,255,255,.05);
+	text-align: center;
+	text-shadow: 0 0 10px rgba(255,255,255,.35);
+}
+.typeart span{
+	letter-spacing: 0.1em;	
+	position: relative;
+	left: -0.075em;
+}
+.argyle{
+	 position: absolute;
+	 top: 105px;
+}
+.argyle .diamond{
+	background: rgba(255,160,71,.25);
+	width: 850px;
+	height: 850px;
+		 -moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+			 -o-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+	float: left;
+	top: 70px;
+	left: -35px;
+	position: absolute;
+}
+.argyle .diamond.line{
+	background: none;
+	border: 3px solid rgba(255,255,255,.35);
+}
+.argyle .diamond.first{
+	left: -190px;
+}
+.argyle .diamond.third{
+	left: 210px;
+}
+.main{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 330px auto 0;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
+.main p{
+	margin-top: 150px;
+	letter-spacing: 0.125em;
+	font-size: x-small;
+}
+.main .titletext{
+	border: 2px solid rgba(255,255,255,.5);
+	margin: 184px auto 0;
+	padding: 0.5em 0.75em;
+	display: inline-block;
+	font-weight: bold;
+}
+.main .titletext .alt{
+	color: rgba(255,160,71,1);
+}
+.main .nexttext{
+	margin: 185px auto;
+}
+.main .nexttext span{
+	border-bottom: 5px solid rgba(255,255,255,.35);
+	padding-bottom: 5px;
+}
+#si-logo{
+	margin: 0 auto;
+	display: block;
+}
+footer{
+	border-top: 4px solid rgba(255,255,255,.35);
+	border-bottom: 4px solid rgba(255,255,255,.35);
+	position: relative;
+	top: -280px;
+}
+footer div{
+	background: rgba(255,255,255,.35);
+	-webkit-margin-before:0.5em;
+	-webkit-margin-after:0.5em;
+	margin: 0.5em 0;
+}
+footer ul.credits{
+	margin: 0.5em auto;
+	padding: 3em 1em 1em;
+	max-width: 960px;
+	height: 70px;
+	font-size: x-small;
+}
+footer ul{
+	-webkit-padding-start:0;
+}
+footer ul li{
+	list-style: none;
+	display: inline-block;
+	float: left;
+	margin-right: 5%;
+	vertical-align: top;
+}
+footer ul li.sponsor{
+	float: right;
+	top: -14px;
+	position: relative;
+	margin-right: 0;
+}
+footer ul li.sponsor span{
+	position: relative;
+	top: -16px;
+	margin-right: 0.5em;
+}
+footer ul.social li{
+	margin-right: 0.25em;
+}
+footer ul.social li i{
+	position: relative;
+	top: -10px;
+}
+@media screen and (max-width: 768px){
+	.argyle .diamond{
+		left: -35px;
+	}
+	.argyle .diamond.first {
+		left: -190px;
+	}
+	.argyle .diamond.third {
+		left: 115px;
+	}
+}
+@media screen and (max-width: 600px){
+	body{
+		background-size: 100% auto;
+	}
+	.main .titletext{
+		margin: 195px 10px 0;
+	}
+	.main .nexttext{
+		margin: 160px auto;
+	}
+	.argyle .diamond.line{
+		left: -260px;
+		top: 550px;
+	}
+	.argyle .diamond.first{
+		left: -265px;
+	}
+	.argyle .diamond.third{
+		left: -265px;
+		top: 1000px;
+	}
+	footer{
+		top: -570px;
+	}
+	footer ul.credits{
+		/*height: auto;*/
+		height: 200px;
+	}
+	footer ul li{
+		display: inline-block;
+		float: none;
+		padding-bottom: 20px;
+		text-align: center;
+		padding-left: 35px;
+	}
+	footer ul.social{
+		padding-left: 45px;
+	}
+	footer ul.social li{
+		padding-left: 0px;
+
+	}
+	footer .sponsor{
+		padding-left: 0px;
+
+	}
+}

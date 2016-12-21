@@ -1,0 +1,48 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Article">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta itemprop="name" content="omnio.us - visual development and design">
+	<meta itemprop="description" content="The work of Ornette @omniosi Coleman. A graphic designer, web designer,  front-end developer, and creative technologist focusing on design, interactions, and animation.">
+	<meta name="keywords" content="graphic design, interaction, animation, front-end development, HTML, CSS, Javascript, JQuery, Flash, video, illustration, audio, editing, prototype">
+	<meta itemprop="image" content="http://omnio.us/img/omnious_logo_2011_block.gif">
+	<meta name="creator" content="ornette @omniosi coleman">
+	<title>omnio.us - visual development and design</title>
+	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://omnio.us/css/omni-icon.min.css">
+	<link rel="icon" type="image/png" href="http://omnio.us/img/o_favicon.png">
+</head>
+<body>
+	<div id="content">
+		<div id="cover"></div>
+		<nav>
+			<h1>Visual Developer &amp; Designer</h1>
+			<ul>
+ 			<li class="outer"><a href="http://omnio.us" target="_self" class="btn">digital</a></li>
+				<li class="outer"><a href="http://omnio.us" target="_self" class="btn">design</a></li>
+				<li class="outer"><a href="http://omnio.us" target="_self" class="btn">&amp; more</a></li>
+				<li class="outer"><a href="http://omnio.us" target="_self" id="about-nav" class="btn">about me</a></li>
+			</ul>
+			<div id="siteName">
+				<p class="copyright">©2011<!-- -13 --> Ornette Coleman. All Rights Reserved.</p>
+				<div id="logo"></div>
+			</div>
+		</nav>
+  <div id="digital" class="section-head">
+  	<h1>ERROR</h1>
+  </div>
+  <div class="section">
+    <div class="entry quote">
+    	<p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+    	<h3>next step:
+    		<span class="attribution">
+							<a href="http://omnio.us" target="_self">go back</a>
+    		</span>
+   		</h3>
+   	</div>
+		</div> <!-- Digital Section END -->
+	</div>
+	<script type="text/javascript" src="http://omnio.us/js/script-jquery.min.js"></script>
+</body>
+</html>
