@@ -194,7 +194,8 @@ h2 {
   /*font-size: 12px;*/
   font-size: 80%;
   color: #045EAA;
-  padding: 6px 2%;
+  /*padding: 6px 2%;*/
+  padding: 6px 10px;
   /*letter-spacing: 1px;*/
   background: #DDECF6;
   /* Old browsers */
@@ -542,13 +543,37 @@ body.dark{
   background: rgba(4, 94, 170, 1);
 }
 body.dark #content{
-  background: rgba(255,255,255,0.35);
+  background: rgba(4, 94, 170, 1);  
+}
+body.dark #content #cover{
+  background: rgba(4, 94, 170, 1);  
 }
 body.dark #content .section-head{
   background: linear-gradient(to bottom, rgba(4, 94, 170, 0.35) 0%, rgba(4, 94, 170, 0) 23%);
 }
 body.dark #content .section .quote p{
   color: rgba(255,255,255,0.75) !important;  
+}
+body.dark #content .section .entry{
+  background: rgba(4, 94, 170, 1);  
+}
+body.dark #content .section .entry h2{
+  background: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 100%);
+  color: rgba(255,255,255,0.75);
+  /*color: #0093d0;*/
+}
+body.dark #content .section .entry h3{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+  color: rgba(255,255,255,0.75);
+}
+body.dark #content .section .entry .desc p{
+  color: rgba(255,255,255,0.75);
+}
+body.dark #content .section .entry .desc p a:visited,
+body.dark #content .section .entry .desc p a,
+body.dark #content .section .entry .desc .title{
+  color: rgba(255,255,255,0.5) !important;
 }
 @media all and (min-width: 920px) {
   nav ul {
