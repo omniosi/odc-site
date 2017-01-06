@@ -549,7 +549,8 @@ body.dark #content #cover{
   background: rgba(4, 94, 170, 1);  
 }
 body.dark #content .section-head{
-  background: linear-gradient(to bottom, rgba(4, 94, 170, 0.35) 0%, rgba(4, 94, 170, 0) 23%);
+  /*background: linear-gradient(to bottom, rgba(4, 94, 170, 0.35) 0%, rgba(4, 94, 170, 0) 23%);*/
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 35%);
 }
 body.dark #content .section .quote p{
   color: rgba(255,255,255,0.75) !important;  
@@ -567,6 +568,13 @@ body.dark #content .section .entry h3{
   background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
   color: rgba(255,255,255,0.75);
 }
+body.dark #content .section .entry.quote h3{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 100%);
+  color: rgba(255,255,255,0.75);
+  /*border: none;*/
+  /*border-bottom: 1px solid rgba(255,255,255,0.5);*/
+  border-bottom: 1px solid rgba(0,0,0,0.35);
+}
 body.dark #content .section .entry .desc p{
   color: rgba(255,255,255,0.75);
 }
@@ -574,6 +582,22 @@ body.dark #content .section .entry .desc p a:visited,
 body.dark #content .section .entry .desc p a,
 body.dark #content .section .entry .desc .title{
   color: rgba(255,255,255,0.5) !important;
+}
+body.dark .section a{
+  color: rgba(255,255,255,0.75);  
+}
+body.dark .section-head{
+  border-top: none;
+}
+body.dark .section-head h1{
+  box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.15);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, rgba(4,94,170,1) 0%, rgba(255,255,255,0.5) 98%);
+  /*color: rgba(4,94,170,1);*/
+  color: rgba(255,255,255,0.75);
+  /*border-top: rgb(4,94,170);*/
+  border: none;
+  margin-left: 10px;
 }
 @media all and (min-width: 920px) {
   nav ul {
@@ -598,5 +622,10 @@ body.dark #content .section .entry .desc .title{
 
   .section-head {
     margin: 10px 0 20px; } }
+
+  body.dark .section-head{
+    margin: 10px 10px 20px;
+  }
+}
 
 /*# sourceMappingURL=omni.css.map */
