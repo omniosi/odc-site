@@ -31,6 +31,13 @@ $(document).ready(function(){
  $('nav a.btn').on('click',function(event){
      var $anchor = $(this);
 		// console.log($anchor);
+
+		$('nav a.btn').removeClass("down");
+		if( $anchor.hasClass("down") ){
+			$anchor.removeClass("down");
+		}else{
+			$anchor.addClass("down");
+		}
 		if( window.innerWidth >= 920 ){
 			$('html, body').stop().animate({
     scrollTop: ( $( $anchor.attr('href') ).offset().top ) - navHeight
