@@ -1,0 +1,30 @@
+@media all and (min-width: 920px) {
+
+  nav ul {
+    width: auto;
+    margin: 0px 18px 10px 0;
+    position: relative;
+    float: right; }
+    nav ul li {
+      width: auto; }
+  nav p {
+    position: absolute;
+    top: -1px;
+    right: -310px;
+    margin: 15px 1% 2px; }
+
+  #siteName {
+    width: auto; }
+
+  #logo {
+    width: 309px;
+    margin-top: 39px; }
+
+  .section-head {
+    margin: 10px 0 20px; } }
+
+  body.dark .section-head{
+    margin: 10px 10px 20px;
+  }
+
+}

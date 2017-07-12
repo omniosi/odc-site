@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="omnious">
+<head>
+	<meta charset="UTF-8">
+	<title>omnio.us - design and development</title>
+	<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-tablet.css">
+	<link rel="stylesheet" href="css/style-desktop.css">
+	<link rel="icon" type="image/png" href="img/o_favicon.png">
+</head>
+<body class="dark" ng-controller="mainCntrl">
+	<div id="content">
+		<div id="cover"></div>
+		<nav>
+			<h1>Visual Developer &amp; Designer</h1>
+			<ul>
+ 			<li class="outer"><a href="#digital" class="btn">digital</a></li>
+				<li class="outer"><a href="#design" class="btn">design</a></li>
+				<li class="outer"><a href="#more" class="btn">&amp; more</a></li>
+				<li class="outer"><a href="#about-head" id="about-nav" class="btn">about me</a></li>
+			</ul>
+			<div id="siteName">
+				<p class="copyright">©2011 Ornette Coleman. All Rights Reserved.</p>
+				<div id="logo"></div>
+			</div>
+		</nav>
+	  <div id="digital" class="section-head">
+	  	<h1>DIGITAL</h1>
+	  </div>
+	  <div class="section">
+			<ul>
+				<li class="entry" ng-repeat="entry in entries">
+		      <h2>{{entry.skill}}</h2>
+		      <img src="img/{{entry.image}}" alt="{{entry.title}}" />
+					<h3>{{entry.title}} <span class="plus">+</span></h3>
+					<div class="desc">
+			      <p ng-bind-html="entry.description.brief"></p>
+			      <p ng-bind-html="entry.description.process"></p>
+			      <a href="{{entry.link}}" target="_blank" ng-show="entry.link">View HTML Website</a>
+		      </div>
+		    </li>
+			</ul>
+	    <div class="entry quote">
+	    	<p>&ldquo;The making influences the thinking.&rdquo;</p>
+	    	<h3>words work:
+	    		<span class="attribution">
+	    			<a href="http://en.wikipedia.org/wiki/Otl_Aicher" target="_blank">Otl Aicher</a>
+	    		</span>
+    		</h3>
+    	</div>
+  	</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{ box-sizing: border-box; transition: all 0.25s; }
+*:before,*:after{ box-sizing: inherit; }
+body{
+	background: rgb(4,94,170);
+	margin: 0; padding: 0;
+}
+#logo{
+	background: url('../img/omnious_logo_600W.png') no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	width: 20%; height: 60px;
+	position: relative;
+	top: 10px; left: 10px;
+}
+#bar{
+	background: #5e96be;
+	height: 18px;
+	width: 100%;
+	position: absolute;
+	top: 0; left: 0;
+}
+#logo,
+#menu,
+#menu li{
+	display: inline-block;
+	vertical-align: top;
+}
+#menu{
+	position: relative;
+	top: -100px;
+}
