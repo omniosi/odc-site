@@ -10,3 +10,6 @@ main{
 	width: 800px;
 	margin: 0 auto;
 }
+header .title{
+	font-family: 'Asap Bold', sans-serif;
+}
