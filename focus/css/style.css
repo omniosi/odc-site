@@ -1,10 +1,13 @@
-*{
+html{
 	box-sizing: border-box;
 }
+*,*:before,*:after{
+	box-sizing: inherit;
+}
 body{
+	margin: 0;padding: 0;
 	background: #0058AD;
 }
-nav,
 header,
 main{
 	width: 800px;
@@ -12,4 +15,51 @@ main{
 }
 header .title{
 	font-family: 'Asap Bold', sans-serif;
+}
+.toggle-switch{
+	position: relative;
+	width: 60px;height: 30px;
+	background: #5b6c79;border: 2px solid #5b6c79;
+	border-radius: 17px;
+	transition: background 0.5s;
+	margin: 1em;
+}
+nav,
+.toggle-switch{
+	display: inline-block;	
+}
+.toggle-switch:after{
+	display: block;
+	content: "";
+	background: #fff;
+	width: 30px;height: 30px;
+	position: absolute;
+	top: 0;left: 0;
+	border-radius: 100%;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	transition: all 0.25s ease-in-out;
+}
+.toggle-screenreader,
+#theme{
+	display: none;
+}
+#theme:checked ~ label.toggle-switch{
+	background: #008a14;
+	border-color: #008a14;
+}
+#theme:checked ~ label.toggle-switch:after{
+	transform: translate3d(100%,0,0);
+}
+#theme:checked ~ main{
+	background: #000;
+	color: #fff;
+}
+#theme ~ main{
+	color: #000;
+	background: #fff;
+}
+main{
+	padding: 1em;
+	transition: background 0.5s,color 0.5s
 }

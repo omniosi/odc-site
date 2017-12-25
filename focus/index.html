@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>omnio.us (focus)</title>
+	<title>omnio.us: design &amp; development</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!-- theme switch -->
+	<input type="checkbox" id="theme" checked>
+	<label class="toggle-switch" for="theme">
+		<div class="toggle-screenreader">Theme switcher</div>
+	</label>
+
 	<nav role="contentinfo">
-		<!-- theme switch -->
 		<p class="copyright">©2017 ornette coleman</p>
-		<a href="https://twitter.com/omniosi" target="_blank"><svg></svg></a>
-		<ul>
-			<li><a href="">github</a></li>
-			<li><a href="">linkedin</a></li>
-			<li><a href="">resumé</a></li>
-		</ul>
-	</nav>
-	<header role="banner">
-		<span class="plaque">
-			<img src="img/omnio-us_logo.png" alt="omnio.us">
+		<a href="https://twitter.com/omniosi" target="_blank"><i class="fab fa-twitter"></i> twitter</a>
+		<span class="btn-group">
+			<a href=""><span class="label"><i class="fab fa-github"></i> github</span></a>
+			<a href=""><span class="label"><i class="fab fa-linkedin"></i> linkedin</span></a>
+			<a href=""><span class="label"><i class="fas fa-file"></i> resumé</span></a>
 		</span>
-		<span class="title">design &amp; <br>development</span>
-	</header>
+	</nav>
 	<main role="main">
+		<header role="banner">
+			<span class="plaque">
+				<img src="img/omnio-us_logo.png" alt="omnio.us">
+			</span>
+			<span class="title">design &amp; <br>development</span>
+		</header>
 		<article role="article">
 			<video autoplay loop width="530">
 				<source src="img/canon-nytimes-takeover-jamie-foxx.mp4" type="video/mp4">
