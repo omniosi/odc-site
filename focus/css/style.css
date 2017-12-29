@@ -22,7 +22,6 @@ nav,
 	left: 1em;
 	background: rgba(0,75,148,.35);
 	/*color: rgba(200,228,241,.6);*/
-	/*color: rgba(200,228,241,.6);*/
 	color: #C8E4F1;
 	border-radius: 17px;
 	-webkit-box-shadow: inset 3px 3px 4px #003263, inset -1px -1px 4px rgba(200,228,241,.75);
@@ -92,6 +91,10 @@ figure{
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
 }
+nav .btn-group{
+	display: flex;
+}
+nav .btn-group a,
 figure.plaque{
 	background: #0092D3;
 	border-radius: 10px;
@@ -104,8 +107,17 @@ figure.plaque{
 		inset -4px -4px 10px #0058AD,
 		inset 4px 4px 10px #C8E4F1;
 }
-/*header,
-main,*/
+nav .btn-group a:first-child{ border-radius: 10px 0 0 10px; }
+nav .btn-group a:last-child{ border-radius: 0 10px 10px 0; }
+nav .btn-group a{
+	padding: 7px 10px;
+	border-radius: 0;
+}
+nav .btn-group a:hover{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: #257ec5;
+}
 article{
 	width: 800px;
 	margin: 0 auto;
