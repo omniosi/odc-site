@@ -19,7 +19,6 @@ nav,
 .toggle-switch{
 	position: absolute;
 	top: 1em;
-	/*left: 1em;*/
 	background: rgba(0,75,148,.35);
 	/*color: rgba(200,228,241,.6);*/
 	/*color: #C8E4F1;*/
@@ -31,10 +30,7 @@ nav,
 	height: 30px;
 }
 nav{
-	/*left: 95px;*/
 	right: 1em;	
-	/*width: 705px;*/
-	/*display: grid;	*/
 	display: flex;	
 }
 .toggle-switch{
@@ -68,9 +64,6 @@ nav{
 }
 nav .copyright,
 .toggle-switch span{
-	/*position: absolute;*/
-	/*top: 0;*/
-	/*width: 100%;*/
 	padding: 7px 10px;
 }
 nav .copyright a .fa-twitter{
@@ -78,10 +71,6 @@ nav .copyright a .fa-twitter{
 }
 .toggle-switch span{
 	display: block;
-}
-nav .btn-group{
-	/*position: absolute;*/
-	/*right: 0;*/
 }
 .toggle-screenreader,
 #theme{
@@ -171,11 +160,12 @@ nav .btn-group a:hover{
 		inset 1px 1px 5px #C8E4F1;
 	background: #257ec5;
 }
-/*body,*/
-/*main,*/
+header,
 article{
 	width: 800px;
-	margin: 0 auto;
+	margin: 0 auto;	
+}
+article{
 	display: grid;
 	grid-template-columns: 530px auto;
 	grid-gap: 30px;
