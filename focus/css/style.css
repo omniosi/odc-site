@@ -168,7 +168,9 @@ article{
 article{
 	display: grid;
 	grid-template-columns: 530px auto;
-	grid-gap: 30px;
+	/*grid-gap: 30px;*/
+	grid-gap: 40px;
+	margin-bottom: 80px;
 }
 article video{
 	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.35);
@@ -177,4 +179,24 @@ article video{
 article span,
 article video{
 	flex: 530px auto;
+}
+article .copy h1{
+	margin-bottom: 0;
+}
+article .copy h2{
+	/*font-family: 'Asap Med', serif;*/
+	font-family: 'PT Serif', serif;
+	text-transform: lowercase;
+	margin-top: 0;
+	line-height: 1;
+}
+article .copy .text{
+	font-family: 'Asap Med', sans-serif;
+	line-height: 1.35;
+}
+article .copy .text .heading,
+article .copy .type{
+	font-family: 'PT Serif', serif;
+	text-transform: lowercase;
+	color: #0092D3;
 }
