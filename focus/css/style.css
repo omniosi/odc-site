@@ -102,7 +102,7 @@ figure{
 	-webkit-margin-end: 0;
 }
 main header{
-	margin-bottom: 2em;
+	/*margin-bottom: 2em;*/
 }
 main header .title{
 	font-size: 22px;
@@ -170,12 +170,14 @@ article{
 	grid-template-columns: 530px auto;
 	/*grid-gap: 30px;*/
 	grid-gap: 40px;
-	margin-bottom: 80px;
+	margin-top: 60px;
 }
+article img,
 article video{
 	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.35);
 	box-shadow: 0 10px 6px -6px rgba(0,0,0,.35);
 }
+article img,
 article span,
 article video{
 	flex: 530px auto;
